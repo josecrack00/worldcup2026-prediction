@@ -581,16 +581,10 @@ header .subtitle {
   gap: 10px;
   margin: 8px 0;
 }
-.award-row:has(#awardGb2) {
-    display: none;
-}
 .award-row label {
   min-width: 90px;
   font-weight: 700;
   font-size: 0.85rem;
-}
-.award-row label:has(#awardGb2) {
-    display: none;
 }
 .award-row input {
   font-family: var(--font);

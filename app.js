@@ -2260,8 +2260,8 @@ function openScoringHelpModal() {
         <div class="scoring-help-card">
           <h4>⭐ Premios individuales</h4>
           <ul>
-            <li>Bota de Oro: <strong>${puntuaciones.premios.goldenBoot.join(' / ')} pts</strong></li>
-            <li>Balón de Oro: <strong>${puntuaciones.premios.goldenBall.join(' / ')} pts</strong></li>
+            <li>Bota de Oro: <strong>${puntuaciones.premios.goldenBoot[0]} pts</strong></li>
+            <li>Balón de Oro: <strong>${puntuaciones.premios.goldenBall[0]} pts</strong></li>
           </ul>
         </div>
       </div>

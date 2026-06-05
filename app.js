@@ -2118,7 +2118,7 @@ async function loadLeaderboard() {
   const submissions = [];
 
   rows.slice(1).forEach(row => {
-    const rawJson = row[1];
+    const rawJson = row[0];
     if (!rawJson) return;
 
     try {

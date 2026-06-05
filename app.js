@@ -34,8 +34,8 @@ const puntuaciones = {
     thirdPlace: 15
   },
   premios: {
-    goldenBoot: [15, 10, 5],
-    goldenBall: [15, 10, 5]
+    goldenBoot: [10, 0, 0],
+    goldenBall: [10, 0, 0]
   }
 };
 

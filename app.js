@@ -2279,9 +2279,7 @@ function openScoringHelpModal() {
         </div>
       </div>
 
-      // <div class="scoring-help-footer">
-      //  Los resultados y las puntuaciones NO son reales, se resetearán a 0 cuando comience el mundial. Es solo un ejemplo aleatorio.
-      // </div>
+   
     </div>
   `;
 }

@@ -2116,13 +2116,13 @@ async function loadLeaderboard() {
 
   const rows = parseCSV(csv);
   const submissions = [];
-
+  
   rows.slice(1).forEach(row => {
-    const rawJson = row[0];
+    const rawJson = row[1];
     if (!rawJson) return;
 
     try {
-      console.log(rawJson);
+      console.warn(rawJson);
       const prediction = JSON.parse(rawJson);
       submissions.push({
         name: prediction.name || 'Anonymous',

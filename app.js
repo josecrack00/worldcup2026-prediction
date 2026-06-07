@@ -2122,6 +2122,7 @@ async function loadLeaderboard() {
     if (!rawJson) return;
 
     try {
+       console.log(rawJson);
       const prediction = JSON.parse(rawJson);
       submissions.push({
         name: prediction.name || 'Anonymous',

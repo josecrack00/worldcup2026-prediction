@@ -1799,14 +1799,14 @@ function fillAwards(a) {
 
   if (a.goldenBoot) {
     document.getElementById('awardGb1').value = a.goldenBoot[0] || '';
-    document.getElementById('awardGb2').value = a.goldenBoot[1] || '';
-    document.getElementById('awardGb3').value = a.goldenBoot[2] || '';
+    //document.getElementById('awardGb2').value = a.goldenBoot[1] || '';
+    //document.getElementById('awardGb3').value = a.goldenBoot[2] || '';
   }
 
   if (a.goldenBall) {
     document.getElementById('awardBa1').value = a.goldenBall[0] || '';
-    document.getElementById('awardBa2').value = a.goldenBall[1] || '';
-    document.getElementById('awardBa3').value = a.goldenBall[2] || '';
+    //document.getElementById('awardBa2').value = a.goldenBall[1] || '';
+    //document.getElementById('awardBa3').value = a.goldenBall[2] || '';
   }
 
   syncAwardCustomSelects();

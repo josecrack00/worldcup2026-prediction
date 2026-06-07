@@ -3147,11 +3147,11 @@ function renderReviewAwards(prediction) {
 
   const rows = [
     [`Bota de oro (${puntuaciones.premios.goldenBoot[0]}pt)`, prediction.awards?.goldenBoot?.[0], RESULTS.awards?.goldenBoot?.[0]],
-    [`Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
-    [`Bota de bronce(${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
-    [`Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]],
-    [`Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
-    [`Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
+    //[`Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
+    //[`Bota de bronce(${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
+    [`Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]]
+    //[`Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
+    //[`Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
   ];
 
   rows.forEach(([label, predicted, real]) => {

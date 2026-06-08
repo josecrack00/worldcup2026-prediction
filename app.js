@@ -123,6 +123,7 @@ const AWARD_PLAYERS = [
   { name: 'Dean Huijsen', country: 'Spain' },
   { name: 'Álex Baena', country: 'Spain' },
   { name: 'Unai Simón', country: 'Spain' },
+  { name: 'Mikel Oyarzabal', country: 'Spain' },
 
   // Argentina
   { name: 'Lionel Messi', country: 'Argentina' },

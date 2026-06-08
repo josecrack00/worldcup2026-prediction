@@ -1,7 +1,9 @@
 const RESULTS = {
   groups: {},
   thirdPlace: [],
-  groupMatches: {},
+  groupMatches: { "A": {
+      "Mexico__South Africa": { "home": 3, "away": 0 }
+    }},
 
   knockout: {
     round32: [],

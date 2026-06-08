@@ -2122,7 +2122,7 @@ async function loadLeaderboard() {
     if (!rawJson) return;
 
     try {
-      console.warn(rawJson);
+//      console.warn(rawJson);
       const prediction = JSON.parse(rawJson);
       submissions.push({
         name: prediction.name || 'Anonymous',

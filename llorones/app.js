@@ -6,9 +6,9 @@
 const DATA_SRC = 'https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026';
 // EDITA ESTAS 3 COSAS POR FAVOR
 // POR FAVOR
-const LEADERBOARD_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSC7G60_CwuwEOTSJLXPZqI-UyJQaona8JprCv7JWHcm17NRRmY703Qiiqr1o843IvzI7GVSgZcpeKM/pub?output=csv'
-const FORM_ID = '1FAIpQLSenXucpAqqG7Qiuw4Kx3hcGDAhtDwTuSsakAItLPQCDZ_luyQ';
-const ENTRY_ID = 'entry.1984996965';
+const LEADERBOARD_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQpqb5MCdpizG2eVvYIgb5v9yqEfXrlz0PUqoZoG9rrsFTGF47PVeXNTO7x9NcSIzz82HsCRGSFVi7_/pub?gid=1265839329&single=true&output=csv'
+const FORM_ID = '1FAIpQLSdGAJVG_7Q9bRwFvAW66GgbMRuHQ-RUWA9Dcz8bYHc7Q5HsqQ';
+const ENTRY_ID = 'entry.1633065085';
 // REPITO, POR FAVOR
 
 // Puedes cambiar los valores por tus propias puntuaciones si quieres
@@ -1799,14 +1799,14 @@ function fillAwards(a) {
 
   if (a.goldenBoot) {
     document.getElementById('awardGb1').value = a.goldenBoot[0] || '';
-    document.getElementById('awardGb2').value = a.goldenBoot[1] || '';
-    document.getElementById('awardGb3').value = a.goldenBoot[2] || '';
+    //document.getElementById('awardGb2').value = a.goldenBoot[1] || '';
+    //document.getElementById('awardGb3').value = a.goldenBoot[2] || '';
   }
 
   if (a.goldenBall) {
     document.getElementById('awardBa1').value = a.goldenBall[0] || '';
-    document.getElementById('awardBa2').value = a.goldenBall[1] || '';
-    document.getElementById('awardBa3').value = a.goldenBall[2] || '';
+    //document.getElementById('awardBa2').value = a.goldenBall[1] || '';
+    //document.getElementById('awardBa3').value = a.goldenBall[2] || '';
   }
 
   syncAwardCustomSelects();
@@ -2116,12 +2116,13 @@ async function loadLeaderboard() {
 
   const rows = parseCSV(csv);
   const submissions = [];
-
+  
   rows.slice(1).forEach(row => {
-    const rawJson = row[0];
+    const rawJson = row[1];
     if (!rawJson) return;
 
     try {
+//      console.warn(rawJson);
       const prediction = JSON.parse(rawJson);
       submissions.push({
         name: prediction.name || 'Anonymous',
@@ -3146,11 +3147,11 @@ function renderReviewAwards(prediction) {
 
   const rows = [
     [`Bota de oro (${puntuaciones.premios.goldenBoot[0]}pt)`, prediction.awards?.goldenBoot?.[0], RESULTS.awards?.goldenBoot?.[0]],
-    [`Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
-    [`Bota de bronce(${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
-    [`Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]],
-    [`Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
-    [`Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
+    //[`Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
+    //[`Bota de bronce(${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
+    [`Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]]
+    //[`Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
+    //[`Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
   ];
 
   rows.forEach(([label, predicted, real]) => {

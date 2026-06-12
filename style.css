@@ -2633,30 +2633,49 @@ header .subtitle {
 }
 
 @media print {
-  /* Ocultar elementos irrelevantes para la impresión */
-  .toolbar-btns, .tab-nav, .prediction-modal-close {
+  /* 1. Resetear toda la jerarquía del modal para que sea un documento fluido */
+  body {
+    background: none !important;
+  }
+
+  /* Ocultar elementos de la web que no queremos imprimir */
+  header, nav, .toolbar-btns, .loading-overlay {
     display: none !important;
   }
 
-  /* Liberar el contenedor del modal y el viewer */
-  .prediction-modal, 
+  /* Forzar que el modal y el viewer se expandan al 100% de la altura del documento */
+  #predictionModal, 
   #predictionViewer {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important; /* IMPORTANTE: Esto permite que crezca hacia abajo */
-    overflow: visible !important;
     display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important; /* Clave: esto elimina la altura fija */
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
   }
 
-  /* Asegurar que el contenido del popup se expanda */
+  /* Forzar que el contenido de la predicción se estire */
   .prediction-review {
     height: auto !important;
+    display: block !important;
     overflow: visible !important;
+    page-break-inside: auto !important;
   }
 
-  /* Evitar saltos de página dentro de bloques críticos */
+  /* Asegurar que las secciones internas no se corten mal */
   .review-groups, .review-section, .bracket-wrapper {
-    break-inside: avoid;
+    height: auto !important;
+    page-break-inside: avoid !important; /* Intenta mantener el bloque unido */
+    margin-bottom: 10px !important;
+  }
+
+  /* Ajuste final para el bracket */
+  .bracket.review-knockout-bracket {
+    position: relative !important;
+    height: auto !important;
+    min-height: auto !important;
   }
 }
 

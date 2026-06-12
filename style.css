@@ -2633,41 +2633,36 @@ header .subtitle {
 }
 
 @media print {
-  /* 1. Resetear el overlay del modal para que no se comporte como una capa flotante */
-  .prediction-modal-overlay {
-    position: static !important;
-    display: block !important;
-    height: auto !important;
-    background: none !important; /* Quita el fondo gris oscuro */
-    overflow: visible !important;
-  }
-
-  /* 2. Resetear el modal interno */
-  .prediction-modal {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    max-width: none !important;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-
-  /* 3. Resetear el visor de datos */
-  #predictionViewer {
-    height: auto !important;
-    overflow: visible !important;
-    display: block !important;
-  }
-
-  /* 4. Ocultar el botón de cerrar que no sirve en papel */
-  .prediction-modal-close {
+  /* 1. Esconde absolutamente todo el contenido de la página, excepto el modal */
+  body > *:not(#predictionModal) {
     display: none !important;
   }
 
-  /* 5. Asegurar que el cuerpo de la web no interfiera */
-  body {
+  /* 2. Fuerza al modal a ser el único documento */
+  #predictionModal {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important; /* Fondo blanco para que no salga gris */
+  }
+
+  /* 3. El viewer también debe estirarse */
+  #predictionViewer {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
     overflow: visible !important;
+  }
+
+  /* 4. Oculta botones de cierre y otros elementos de UI innecesarios */
+  .prediction-modal-close, 
+  .tab-nav, 
+  header {
+    display: none !important;
   }
 }
 

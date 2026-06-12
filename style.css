@@ -2633,25 +2633,31 @@ header .subtitle {
 }
 
 @media print {
-    /* Permitir que el contenedor crezca según su contenido */
-    .review-knockout-pane {
-        height: auto !important;
-        overflow: visible !important;
-        /* Evita que el contenedor se corte a la mitad de una página */
-        break-inside: avoid;
-    }
+  /* Ocultar elementos irrelevantes para la impresión */
+  .toolbar-btns, .tab-nav, .prediction-modal-close {
+    display: none !important;
+  }
 
-    /* Ajustar el contenedor raíz para que no limite la altura */
-    .bracket.review-knockout-bracket {
-        height: auto !important;
-        min-height: 100vh;
-    }
+  /* Liberar el contenedor del modal y el viewer */
+  .prediction-modal, 
+  #predictionViewer {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important; /* IMPORTANTE: Esto permite que crezca hacia abajo */
+    overflow: visible !important;
+    display: block !important;
+  }
 
-    /* Asegurar que el SVG también se ajuste */
-    .bracket.review-knockout-bracket svg {
-        height: auto !important;
-        overflow: visible !important;
-    }
+  /* Asegurar que el contenido del popup se expanda */
+  .prediction-review {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Evitar saltos de página dentro de bloques críticos */
+  .review-groups, .review-section, .bracket-wrapper {
+    break-inside: avoid;
+  }
 }
 
 

@@ -2633,49 +2633,41 @@ header .subtitle {
 }
 
 @media print {
-  /* 1. Resetear toda la jerarquía del modal para que sea un documento fluido */
-  body {
-    background: none !important;
+  /* 1. Resetear el overlay del modal para que no se comporte como una capa flotante */
+  .prediction-modal-overlay {
+    position: static !important;
+    display: block !important;
+    height: auto !important;
+    background: none !important; /* Quita el fondo gris oscuro */
+    overflow: visible !important;
   }
 
-  /* Ocultar elementos de la web que no queremos imprimir */
-  header, nav, .toolbar-btns, .loading-overlay {
+  /* 2. Resetear el modal interno */
+  .prediction-modal {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* 3. Resetear el visor de datos */
+  #predictionViewer {
+    height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  /* 4. Ocultar el botón de cerrar que no sirve en papel */
+  .prediction-modal-close {
     display: none !important;
   }
 
-  /* Forzar que el modal y el viewer se expandan al 100% de la altura del documento */
-  #predictionModal, 
-  #predictionViewer {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    height: auto !important; /* Clave: esto elimina la altura fija */
+  /* 5. Asegurar que el cuerpo de la web no interfiera */
+  body {
     overflow: visible !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: none !important;
-  }
-
-  /* Forzar que el contenido de la predicción se estire */
-  .prediction-review {
-    height: auto !important;
-    display: block !important;
-    overflow: visible !important;
-    page-break-inside: auto !important;
-  }
-
-  /* Asegurar que las secciones internas no se corten mal */
-  .review-groups, .review-section, .bracket-wrapper {
-    height: auto !important;
-    page-break-inside: avoid !important; /* Intenta mantener el bloque unido */
-    margin-bottom: 10px !important;
-  }
-
-  /* Ajuste final para el bracket */
-  .bracket.review-knockout-bracket {
-    position: relative !important;
-    height: auto !important;
-    min-height: auto !important;
   }
 }
 

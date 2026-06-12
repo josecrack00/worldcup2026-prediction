@@ -2631,3 +2631,30 @@ header .subtitle {
     margin: 0 !important;
   }
 }
+
+@media print {
+    /* Permitir que el contenedor crezca según su contenido */
+    .review-knockout-pane {
+        height: auto !important;
+        overflow: visible !important;
+        /* Evita que el contenedor se corte a la mitad de una página */
+        break-inside: avoid;
+    }
+
+    /* Ajustar el contenedor raíz para que no limite la altura */
+    .bracket.review-knockout-bracket {
+        height: auto !important;
+        min-height: 100vh;
+    }
+
+    /* Asegurar que el SVG también se ajuste */
+    .bracket.review-knockout-bracket svg {
+        height: auto !important;
+        overflow: visible !important;
+    }
+}
+
+
+
+
+

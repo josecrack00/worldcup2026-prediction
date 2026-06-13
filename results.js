@@ -11,7 +11,7 @@ const RESULTS = {
     "C": {
     },
     "D": {
-      "Paraguay__USA": { "home": 1, "away": 4 }
+      "USA__Paraguay": { "home": 4, "away": 1 }
     }},
 
   knockout: {

@@ -15,7 +15,7 @@ const RESULTS = {
     },
     "D": {
       "USA__Paraguay": { "home": 4, "away": 1 },
-      "Turkey__Australia": { "home": 0, "away": 2 }
+      "Australia__Turkey": { "home": 2, "away": 0 }
     }},
 
   knockout: {

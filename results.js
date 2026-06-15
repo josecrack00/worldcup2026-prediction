@@ -16,6 +16,14 @@ const RESULTS = {
     "D": {
       "USA__Paraguay": { "home": 4, "away": 1 },
       "Australia__Turkey": { "home": 2, "away": 0 }
+    },
+    "E": {
+      "Curaçao__Germany": { "home": 7, "away": 1 },
+      "Ecuador__Ivory Coast": { "home": 1, "away": 0 }
+    },
+    "F": {
+      "Japan__Netherlands": { "home": 2, "away": 2 },
+      "Tunisia__Sweden": { "home": 5, "away": 1 }
     }},
 
   knockout: {

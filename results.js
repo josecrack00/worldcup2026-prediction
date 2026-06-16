@@ -24,6 +24,54 @@ const RESULTS = {
     "F": {
       "Japan__Netherlands": { "home": 2, "away": 2 },
       "Tunisia__Sweden": { "home": 5, "away": 1 }
+    },
+     "G": {
+      "Egypt__Belgium": { "home": 1, "away": 1 },
+      "Egypt__Iran": { "home": -1, "away": -1 },
+      "Egypt__New Zealand": { "home": -1, "away": -1 },
+      "Belgium__Iran": { "home": -1, "away": -1 },
+      "Belgium__New Zealand": { "home": -1, "away": -1 },
+      "Iran__New Zealand": { "home": 2, "away": 2 }
+    },
+    "H": {
+      "Uruguay__Spain": { "home": -1, "away": -1 },
+      "Uruguay__Saudi Arabia": { "home": 1, "away": 1 },
+      "Uruguay__Cape Verde": { "home": -1, "away": -1 },
+      "Spain__Saudi Arabia": { "home": -1, "away": -1 },
+      "Spain__Cape Verde": { "home": 0, "away": 0 },
+      "Saudi Arabia__Cape Verde": { "home": -1, "away": -1 }
+    },
+    "I": {
+      "France__Iraq": { "home": -1, "away": -1 },
+      "France__Senegal": { "home": -1, "away": -1 },
+      "France__Norway": { "home": -1, "away": -1 },
+      "Iraq__Senegal": { "home": -1, "away": -1 },
+      "Iraq__Norway": { "home": -1, "away": -1 },
+      "Senegal__Norway": { "home": -1, "away": -1 }
+    },
+    "J": {
+      "Argentina__Jordan": { "home": -1, "away": -1 },
+      "Argentina__Algeria": { "home": -1, "away": -1 },
+      "Argentina__Austria": { "home": -1, "away": -1 },
+      "Jordan__Algeria": { "home": -1, "away": -1 },
+      "Jordan__Austria": { "home": -1, "away": -1 },
+      "Algeria__Austria": { "home": -1, "away": -1 }
+    },
+    "K": {
+      "Portugal__Uzbekistan": { "home": -1, "away": -1 },
+      "Portugal__DR Congo": { "home": -1, "away": -1 },
+      "Portugal__Colombia": { "home": -1, "away": -1 },
+      "Uzbekistan__DR Congo": { "home": -1, "away": -1 },
+      "Uzbekistan__Colombia": { "home": -1, "away": -1 },
+      "DR Congo__Colombia": { "home": -1, "away": -1 }
+    },
+    "L": {
+      "England__Ghana": { "home": -1, "away": -1 },
+      "England__Croatia": { "home": -1, "away": -1 },
+      "England__Panama": { "home": -1, "away": -1 },
+      "Ghana__Croatia": { "home": -1, "away": -1 },
+      "Ghana__Panama": { "home": -1, "away": -1 },
+      "Croatia__Panama": { "home": -1, "away": -1 }
     }},
 
   knockout: {

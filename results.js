@@ -27,7 +27,7 @@ const RESULTS = {
     },
     "D": {
       "Turkey__Paraguay": { "home": -1, "away": -1 },
-      "Australia__Turkey": { "home": 2, "away": 0 }
+      "Australia__Turkey": { "home": 2, "away": 0 },
       "Turkey__USA": { "home": -1, "away": -1 },
       "Paraguay__Australia": { "home": -1, "away": -1 },
       "USA__Paraguay": { "home": 4, "away": 1 },
@@ -38,7 +38,7 @@ const RESULTS = {
       "Curaçao__Germany": { "home": 7, "away": 1 },
       "Curaçao__Ivory Coast": { "home": -1, "away": -1 },
       "Ecuador__Germany": { "home": -1, "away": -1 },
-      "Ecuador__Ivory Coast": { "home": 1, "away": 0 }.
+      "Ecuador__Ivory Coast": { "home": 1, "away": 0 },
       "Germany__Ivory Coast": { "home": 0, "away": 1 }
     },
     "F": {

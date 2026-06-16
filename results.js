@@ -3,26 +3,50 @@ const RESULTS = {
   thirdPlace: [],
   groupMatches: { "A": {
       "Mexico__South Africa": { "home": 2, "away": 0 },
+      "Mexico__South Korea": { "home": -1, "away": -1 },
+      "Mexico__Czech Republic": { "home": -1, "away": -1 },
+      "South Africa__South Korea": { "home": -1, "away": -1 },
+      "South Africa__Czech Republic": { "home": -1, "away": -1 },
       "South Korea__Czech Republic": { "home": 2, "away": 1 }
     },
     "B": {
+      "Canada__Switzerland": { "home": -1, "away": -1 },
+      "Canada__Qatar": { "home": -1, "away": -1 },
       "Canada__Bosnia & Herzegovina": { "home": 1, "away": 1 },
       "Switzerland__Qatar": { "home": 1, "away": 1 },
+      "Switzerland__Bosnia & Herzegovina": { "home": -1, "away": -1 },
+      "Qatar__Bosnia & Herzegovina": { "home": -1, "away": -1 }      
     },
     "C": {
+      "Brazil__Haiti": { "home": -1, "away": -1 },
       "Brazil__Morocco": { "home": 1, "away": 1 },
-      "Haiti__Scotland": { "home": 0, "away": 1 }
+      "Brazil__Scotland": { "home": -1, "away": -1 },
+      "Haiti__Morocco": { "home": -1, "away": -1 },
+      "Haiti__Scotland": { "home": 0, "away": 1 },
+      "Morocco__Scotland": { "home": -1, "away": -1 }
     },
     "D": {
-      "USA__Paraguay": { "home": 4, "away": 1 },
+      "Turkey__Paraguay": { "home": -1, "away": -1 },
       "Australia__Turkey": { "home": 2, "away": 0 }
+      "Turkey__USA": { "home": -1, "away": -1 },
+      "Paraguay__Australia": { "home": -1, "away": -1 },
+      "USA__Paraguay": { "home": 4, "away": 1 },
+      "Australia__USA": { "home": -1, "away": -1 }
     },
     "E": {
+      "Curaçao__Ecuador": { "home": -1, "away": -1 },
       "Curaçao__Germany": { "home": 7, "away": 1 },
-      "Ecuador__Ivory Coast": { "home": 1, "away": 0 }
+      "Curaçao__Ivory Coast": { "home": -1, "away": -1 },
+      "Ecuador__Germany": { "home": -1, "away": -1 },
+      "Ecuador__Ivory Coast": { "home": 1, "away": 0 }.
+      "Germany__Ivory Coast": { "home": 0, "away": 1 }
     },
     "F": {
       "Japan__Netherlands": { "home": 2, "away": 2 },
+      "Japan__Tunisia": { "home": -1, "away": -1 },
+      "Japan__Sweden": { "home": -1, "away": -1 },
+      "Netherlands__Tunisia": { "home": -1, "away": -1 },
+      "Netherlands__Sweden": { "home": -1, "away": -1 },
       "Tunisia__Sweden": { "home": 5, "away": 1 }
     },
      "G": {

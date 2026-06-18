@@ -39,7 +39,7 @@ const RESULTS = {
       "Curaçao__Ivory Coast": { "home": -1, "away": -1 },
       "Ecuador__Germany": { "home": -1, "away": -1 },
       "Ecuador__Ivory Coast": { "home": 1, "away": 0 },
-      "Germany__Ivory Coast": { "home": 0, "away": 1 }
+      "Germany__Ivory Coast": { "home": -1, "away": -1 }
     },
     "F": {
       "Japan__Netherlands": { "home": 2, "away": 2 },

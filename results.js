@@ -18,20 +18,20 @@ const RESULTS = {
       "Qatar__Bosnia & Herzegovina": { "home": -1, "away": -1 }      
     },
     "C": {
-      "Brazil__Haiti": { "home": -1, "away": -1 },
+      "Brazil__Haiti": { "home": 3, "away": 0 },
       "Brazil__Morocco": { "home": 1, "away": 1 },
       "Brazil__Scotland": { "home": -1, "away": -1 },
       "Haiti__Morocco": { "home": -1, "away": -1 },
       "Haiti__Scotland": { "home": 0, "away": 1 },
-      "Morocco__Scotland": { "home": -1, "away": -1 }
+      "Morocco__Scotland": { "home": 0, "away": 1 }
     },
     "D": {
-      "Turkey__Paraguay": { "home": -1, "away": -1 },
+      "Turkey__Paraguay": { "home": 0, "away": 1 },
       "Australia__Turkey": { "home": 2, "away": 0 },
       "Turkey__USA": { "home": -1, "away": -1 },
       "Paraguay__Australia": { "home": -1, "away": -1 },
       "USA__Paraguay": { "home": 4, "away": 1 },
-      "Australia__USA": { "home": -1, "away": -1 }
+      "Australia__USA": { "home": 2, "away": 0 }
     },
     "E": {
       "Curaçao__Ecuador": { "home": -1, "away": -1 },

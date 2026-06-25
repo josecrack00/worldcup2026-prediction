@@ -18,10 +18,7 @@ const RESULTS = {
       "Haiti"
     ],
     "D": [
-      "Turkey",
-      "Paraguay",
-      "USA",
-      "Australia"
+
     ],
     "E": [
       "Germany",
@@ -30,46 +27,25 @@ const RESULTS = {
       "Curaçao"
     ],
     "F": [
-      "Netherlands",
-      "Japan",
-      "Sweden",
-      "Tunisia"
+
     ],
     "G": [
-      "Egypt",
-      "Belgium",
-      "New Zealand",
-      "Iran"
+ 
     ],
     "H": [
-      "Uruguay",
-      "Cape Verde",
-      "Spain",
-      "Saudi Arabia"
+ 
     ],
     "I": [
-      "Norway",
-      "France",
-      "Iraq",
-      "Senegal"
+
     ],
     "J": [
-      "Jordan",
-      "Argentina",
-      "Algeria",
-      "Austria"
+ 
     ],
     "K": [
-      "DR Congo",
-      "Portugal",
-      "Colombia",
-      "Uzbekistan"
+
     ],
     "L": [
-      "Ghana",
-      "Panama",
-      "Croatia",
-      "England"
+
     ]},
   thirdPlace: [],
   groupMatches: { "A": {

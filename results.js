@@ -71,7 +71,7 @@ const RESULTS = {
       "Ghana",
       "Panama"
     ]},
-  thirdPlace: [
+  ThirdPlace: [
     "DR Congo",
     "Sweden",
     "Ghana",

@@ -71,7 +71,7 @@ const RESULTS = {
       "Ghana",
       "Panama"
     ]},
-  ThirdPlace: [
+  "ThirdPlace": [
     "DR Congo",
     "Sweden",
     "Ghana",
@@ -178,8 +178,10 @@ const RESULTS = {
       "Croatia__Panama": { "home": 0, "away": 1 }
     }},
 
-  knockout: {
-    round32: [{ "match": 73, "team1": "South Africa", "team2": "Canada", "winner": "Canada" },
+  "knockout": {
+    "matches": {
+      "round32": [
+        { "match": 73, "team1": "South Africa", "team2": "Canada", "winner": "Canada" },
         { "match": 74, "team1": "Germany", "team2": "Paraguay" },
         { "match": 75, "team1": "Netherlands", "team2": "Morocco" },
         { "match": 76, "team1": "Brazil", "team2": "Japan" },
@@ -194,30 +196,10 @@ const RESULTS = {
         { "match": 85, "team1": "Switzerland", "team2": "Algeria" },
         { "match": 86, "team1": "Argentina", "team2": "Cape Verde" },
         { "match": 87, "team1": "Colombia", "team2": "Ghana" },
-        { "match": 88, "team1": "Australia", "team2": "Egypt" }],
-    round16: [],
-    quarterfinals: [],
-    semifinals: [],
-
-    champion: "",
-    runnerUp: "",
-    finalists: [],
-
-    thirdPlaceWinner: "",
-    final: "",
-    thirdPlace: "",
-
-    matches: {
-      round32: [
-        // {
-        //   match: 73,
-        //   team1: "",
-        //   team2: "",
-        //   winner: ""
-        // }
+        { "match": 88, "team1": "Australia", "team2": "Egypt" }
       ],
 
-      round16: [
+      "round16": [
         // {
         //   match: 89,
         //   team1: "",

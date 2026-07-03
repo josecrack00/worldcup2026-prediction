@@ -191,9 +191,9 @@ const RESULTS = {
         { "match": 80, "team1": "England", "team2": "DR Congo", "winner": "England"  },
         { "match": 81, "team1": "USA", "team2": "Bosnia & Herzegovina", "winner": "USA"  },
         { "match": 82, "team1": "Belgium", "team2": "Senegal" , "winner": "Belgium" },
-        { "match": 83, "team1": "Portugal", "team2": "Croatia", "winner": ""  },
-        { "match": 84, "team1": "Spain", "team2": "Austria", "winner": ""  },
-        { "match": 85, "team1": "Switzerland", "team2": "Algeria", "winner": ""  },
+        { "match": 83, "team1": "Portugal", "team2": "Croatia", "winner": "Portugal"  },
+        { "match": 84, "team1": "Spain", "team2": "Austria", "winner": "Spain"  },
+        { "match": 85, "team1": "Switzerland", "team2": "Algeria", "winner": "Switzerland"  },
         { "match": 86, "team1": "Argentina", "team2": "Cape Verde", "winner": ""  },
         { "match": 87, "team1": "Colombia", "team2": "Ghana", "winner": ""  },
         { "match": 88, "team1": "Australia", "team2": "Egypt", "winner": ""  }
@@ -204,9 +204,9 @@ const RESULTS = {
         { "match": 90, "team1": "Canada", "team2": "Morocco", "winner": "" },
         { "match": 91, "team1": "Brazil", "team2": "Norway", "winner": "" },
         { "match": 92, "team1": "Mexico", "team2": "England", "winner": "" },
-        { "match": 93, "team1": "", "team2": "", "winner": "" },
+        { "match": 93, "team1": "Spain", "team2": "Portugal", "winner": "" },
         { "match": 94, "team1": "USA", "team2": "Belgium", "winner": "" },
-        { "match": 95, "team1": "", "team2": "", "winner": "" },
+        { "match": 95, "team1": "Switzerland", "team2": "", "winner": "" },
         { "match": 96, "team1": "", "team2": "", "winner": "" }
       ],
 

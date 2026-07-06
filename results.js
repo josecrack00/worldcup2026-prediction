@@ -212,8 +212,8 @@ const RESULTS = {
 
       quarterfinals: [
         { "match": 97, "team1": "France", "team2": "Morocco", "winner": "" },
-        { "match": 98, "team1": "", "team2": "Morocco", "winner": "" },
-        { "match": 99, "team1": "", "team2": "Algeria", "winner": "" },
+        { "match": 98, "team1": "", "team2": "", "winner": "" },
+        { "match": 99, "team1": "Norway", "team2": "England", "winner": "" },
         { "match": 100, "team1": "", "team2": "", "winner": "" }
       ],
 

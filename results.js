@@ -218,27 +218,17 @@ const RESULTS = {
       ],
 
       semifinals: [
-        { "match": 101, "team1": "France", "team2": "Spain", "winner": "" },
+        { "match": 101, "team1": "France", "team2": "Spain", "winner": "Spain" },
         { "match": 102, "team1": "England", "team2": "Argentina", "winner": "" }
     
       ],
 
       thirdPlace: [
-        // {
-        //   match: 103,
-        //   team1: "",
-        //   team2: "",
-        //   winner: ""
-        // }
+        { "match": 103, "team1": "France", "team2": "", "winner": "" }
       ],
 
       final: [
-        // {
-        //   match: 104,
-        //   team1: "",
-        //   team2: "",
-        //   winner: ""
-        // }
+        { "match": 104, "team1": "Spain", "team2": "", "winner": "" }
       ]
     }
   },

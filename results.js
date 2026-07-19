@@ -224,11 +224,11 @@ const RESULTS = {
       ],
 
       thirdPlace: [
-        { "match": 103, "team1": "France", "team2": "England", "winner": "" }
+        { "match": 103, "team1": "France", "team2": "England", "winner": "England" }
       ],
 
       final: [
-        { "match": 104, "team1": "Spain", "team2": "Argentina", "winner": "" }
+        { "match": 104, "team1": "Spain", "team2": "Argentina", "winner": "Spain" }
       ]
     }
   },
@@ -236,12 +236,12 @@ const RESULTS = {
   semifinalists: [],
   finalists: [],
 
-  champion: "",
-  runnerUp: "",
-  thirdPlaceWinner: "",
+  champion: "Spain",
+  runnerUp: "Argentina",
+  thirdPlaceWinner: "England",
 
   awards: {
-    goldenBoot: [],
+    goldenBoot: ["Mbappe"],
     goldenBall: []
   }
 };

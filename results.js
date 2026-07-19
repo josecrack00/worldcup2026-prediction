@@ -241,7 +241,7 @@ const RESULTS = {
   thirdPlaceWinner: "England",
 
   awards: {
-    goldenBoot: ["Mbappe"],
-    goldenBall: []
+    goldenBoot: ["Kylian Mbappé"],
+    goldenBall: ["Rodri"]
   }
 };

@@ -15,7 +15,7 @@ const ENTRY_ID = 'entry.1633065085';
 const puntuaciones = {
   grupos: {
     partido: {
-      resultadoExacto: 3,
+      resultadoExacto: 2,
       ganadorEmpateCorrecto: 1
     },
     posicion: {
